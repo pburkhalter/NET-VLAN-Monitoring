@@ -11,9 +11,37 @@ Während des Praktikums dokumentierten wir alle Arbeitsschritte, Überlegungen u
 
 ## Übersicht
 
-![Network Schematics](./doc/Network_Schematics.png)
+### Funktionsweise eines VLAN
+Vorab informierten wir uns über die Funktionsweise eines VLAN, um die Aufgabe in Angriff nehmen zu können. Nach erfolgter Recherche bei Wikipedia halten wir folgen fest:
 
-Abb. 1: Konfiguration des Netzwerkes
+- Ein Virtual Local Area Network (VLAN) ist ein logisches Teilnetz (Segment) innerhalb eines Switches bzw. eines gesamten physischen Netzwerks. 
+- Ein VLAN kann sich über mehrere Switches hinweg ausdehnen. 
+- Ein VLAN trennt physische Netze in Teilnetze auf, indem es dafür sorgt, dass VLAN-fähige Switches Frames (Datenpakete) nicht in ein anderes VLAN weiterleiten, obwohl die Teilnetze an gemeinsamen Switches angeschlossen sein können.
+
+Die Zuordnung der Teilnetze zu einem VLAN kann statisch über Portzuordnung an den Switches erfolgen, über spezielle Markierungen an den Paketen (Tags) realisiert sein oder dynamisch erfolgen (zum Beispiel durch MAC-Adressen, IP-Adressen bis hin zu TCP- und UDP-Ports und höheren Protokollen). Ebenfalls ist eine Zuordnung eines Ports zu einem VLAN nach Authentifizierung des Anwenders z. B. mittels 802.1X möglich.
+
+Jedes VLAN bildet, wie ein normales, physisch separiertes Netzwerksegment, eine eigene Broadcast-Domäne. Um den Verkehr zwischen den VLANs transparent zu vermitteln, benötigt man einen Router. Moderne Switches stellen diese Funktion intern zur Verfügung; man spricht dann von einem Layer-3-Switch.
+
+
+Ein VLAN bietet diverse Vorteile im Gegensatz zum herkömmlichen Ansatz:
+
+- Die Zuordnung von Endgeräten zu Netzwerksegmenten erfolgt unabhängig vom Standort der Basisstation.
+- Im gegensatz zur physischen Zuordnung zu verschiedenen Subnetzenm kann der Wechsel eines Clients von einem VLAN in ein anderes am Kopplungselement (Multilayerswitch, Router) geschehen, ohne dass eine physische Verbindung geändert werden muss.
+- Es Entstehen Performance-Vorteile. So kann zum Beispiel ein bestimmter Datenverkehr wie VoIP in einem VLAN erfolgen, das bei der Übertragung priorisiert wird.
+- VLANs können Netze gegen Ausspionieren und Abhören besser absichern als Switch-basierte Netze. 
+
+
+Die folgende Grafik veranschualicht den Aufbau eines VLAN:
+
+![VLAN](.github/assets/vlan.gif)
+
+Abb. 1: Funktionsweise eines VLAN
+
+### Aufgabenstellung
+
+
+![Network Schematics](./doc/Network_Schematics.png)
+Abb. 2: Konfiguration des Netzwerkes
 
 Auf der schematischen Darstellung von Andreas ist ersichtlich, dass drei VLANs benötigt werden:
 
@@ -22,7 +50,7 @@ Auf der schematischen Darstellung von Andreas ist ersichtlich, dass drei VLANs b
 - VLAN "grün" befindet sich hinter der zweiten Firewall und bildet das interne Netz. Hier liegt der DHCP-Server, der Radius-Server sowie die Access Points, welche die Funktion "EAP" unterstützen. 
 
 
-##Dokumentation der Installation / Konfiguration / Testing
+## Dokumentation der Installation / Konfiguration / Testing
 
 Da wir verschiedene Ansätze geprüft haben, werden wir die einzelnen Herangehensweisen direkt beschreiben und jeweils auf die Installation, Konfiguration und das Testing jedes Ansatzes eingehen.
 
@@ -37,7 +65,7 @@ Manual: [Dokumentation für den Netgear Switch](doc/Manual_Netgear_Switch.pdf)
 
 ![Wirehsark](.github/assets/wireshark.png)
 
-Abb. 2: Auszug aus Wireshark, Switch sendet keine Antwort
+Abb. 3: Auszug aus Wireshark, Switch sendet keine Antwort
 
 ### 2. Versuch: HP Switch ProCurve 2510G-58
 Manual: [Dokumentation für den HP Switch](doc/Manual_HP_Switch.pdf)
@@ -50,7 +78,7 @@ Manual: [Dokumentation für den HP Switch](doc/Manual_HP_Switch.pdf)
 
 ![Putty](.github/assets/putty.png)
 
-Abb. 3: Ausschnitt aus dem Konfigurationstool PuTTY
+Abb. 4: Ausschnitt aus dem Konfigurationstool PuTTY
 
 
 ### 3. Versuch: Cisco Switch
@@ -64,10 +92,10 @@ Manual: [Dokumentation für den HP Switch](doc/Manual_Cisco_Switch.pdf)
 ## Testing
 Das Testing entfällt, da wir keinen der drei Switches in Betrieb nehmen konnten.
 
-##Ausblick
+## Ausblick
 Wäre uns mehr Zeit zur Verfügung gestanden, hätten wir uns vertiefter mit der Materie auseinandersetzen können. Das Ziel wäre es gewesen, die VLANs zum Laufen zu bringen. Da das VLAN das Grundgerüst des Netzwerkschemas bildet, konnten wir das ganze Netzwerk nicht zum Laufen bringen.
 
-Als nächstes hätten wir die Konfiguration des Cisco-Switches beendet. Leider hätten wir dafür viel mehr Zeit benötigt, da wir uns überhaupt nicht mit dem Cisco iOS auskannten und so die Einarbeitungszeit sehr hoch gewesen wäre.
+Als Nächstes hätten wir die Konfiguration des Cisco-Switches beendet. Leider hätten wir dafür viel mehr Zeit benötigt, da wir uns überhaupt nicht mit dem Cisco iOS auskannten und so die Einarbeitungszeit sehr hoch gewesen wäre.
 
 ## Glossar
 Worterklärungen finden sich im [Glossar](doc/glossar.md)

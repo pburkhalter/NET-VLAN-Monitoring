@@ -1,5 +1,8 @@
 # Glossar
 
+### VLAN
+Ein Virtual Local Area Network (VLAN) ist ein logisches Teilnetz (Segment (Netzwerk)) innerhalb eines Switches bzw. eines gesamten physischen Netzwerks. Es kann sich über mehrere Switches hinweg ausdehnen. Ein VLAN trennt physische Netze in Teilnetze auf, indem es dafür sorgt, dass VLAN-fähige Switches Frames (Datenpakete) nicht in ein anderes VLAN weiterleiten, obwohl die Teilnetze an gemeinsamen Switches angeschlossen sein können.
+
 ### EAP
 Extensible Authentication Protocol (EAP, deutsch Erweiterbares Authentifizierungsprotokoll). Bindeglied zwischen Clients und Radius-Server
 
