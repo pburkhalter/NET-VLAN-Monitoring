@@ -82,7 +82,7 @@ Abb. 4: Ausschnitt aus dem Konfigurationstool PuTTY
 
 
 ### 3. Versuch: Cisco Switch
-Manual: [Dokumentation für den HP Switch](doc/Manual_Cisco_Switch.pdf)
+Manual: [Dokumentation für den Cisco Switch](doc/Manual_Cisco_Switch.pdf)
 
 - Kommunikation mit dem Switch erfolgreich.
 - Grundlegende Konfiguration konnte abgeschlossen werden
