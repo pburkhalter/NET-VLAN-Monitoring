@@ -1,6 +1,6 @@
 # Aufgabe Netzwerktechnik - VLAN Monitoring 
 
-##Einleitung
+## Einleitung
 
 Am Freitag, 21. Januar 2022 fand das Praktikum im Fach Netzwerktechnik bei Andreas Holzer statt. Der Inhalt des Praktikums war es, unser Wissen im Bereich der Netzwerktechnik zu vertiefen.
 
@@ -9,7 +9,7 @@ Die Aufgabenstellung für diesen Morgen lautete folgendermassen: Wir sollten ein
 Während des Praktikums dokumentierten wir alle Arbeitsschritte, Überlegungen und Ideen. Aus diesen Inhalten erstellten wir anschliessend diese Anleitung auf Github.
 
 
-##Übersicht
+## Übersicht
 
 ![Network Schematics](./doc/Network_Schematics.png)
 
@@ -26,7 +26,7 @@ Auf der schematischen Darstellung von Andreas ist ersichtlich, dass drei VLANs b
 
 Da wir verschiedene Ansätze geprüft haben, werden wir die einzelnen Herangehensweisen direkt beschreiben und jeweils auf die Installation, Konfiguration und das Testing jedes Ansatzes eingehen.
 
-###1. Versuch: Netgear Switch GS728TP
+### 1. Versuch: Netgear Switch GS728TP
 Manual: [Dokumentation für den Netgear Switch](doc/Manual_Netgear_Switch.pdf)
 
 - Netgear Switch mittels Factory Reset auf Werkeinstellungen zurückgesetzt
@@ -39,7 +39,7 @@ Manual: [Dokumentation für den Netgear Switch](doc/Manual_Netgear_Switch.pdf)
 
 Abb. 2: Auszug aus Wireshark, Switch sendet keine Antwort
 
-###2. Versuch: HP Switch ProCurve 2510G-58
+### 2. Versuch: HP Switch ProCurve 2510G-58
 Manual: [Dokumentation für den HP Switch](doc/Manual_HP_Switch.pdf)
 
 - HP Switch mittels Factory Reset auf Werkeinstellungen zurückgesetzt
@@ -53,7 +53,7 @@ Manual: [Dokumentation für den HP Switch](doc/Manual_HP_Switch.pdf)
 Abb. 3: Ausschnitt aus dem Konfigurationstool PuTTY
 
 
-###3. Versuch: Cisco Switch
+### 3. Versuch: Cisco Switch
 Manual: [Dokumentation für den HP Switch](doc/Manual_Cisco_Switch.pdf)
 
 - Kommunikation mit dem Switch erfolgreich.
@@ -61,7 +61,7 @@ Manual: [Dokumentation für den HP Switch](doc/Manual_Cisco_Switch.pdf)
 - Weiterarbeit nicht möglich: Es blieb keine Zeit mehr für das Studium und die Umsetzung der Befehle (Cisco iOS)
 
 
-##Testing
+## Testing
 Das Testing entfällt, da wir keinen der drei Switches in Betrieb nehmen konnten.
 
 ##Ausblick
@@ -69,5 +69,5 @@ Wäre uns mehr Zeit zur Verfügung gestanden, hätten wir uns vertiefter mit der
 
 Als nächstes hätten wir die Konfiguration des Cisco-Switches beendet. Leider hätten wir dafür viel mehr Zeit benötigt, da wir uns überhaupt nicht mit dem Cisco iOS auskannten und so die Einarbeitungszeit sehr hoch gewesen wäre.
 
-##Glossar
+## Glossar
 Worterklärungen finden sich im [Glossar](doc/glossar.md)
