@@ -26,12 +26,12 @@ Jedes VLAN bildet, wie ein normales, physisch separiertes Netzwerksegment, eine 
 Ein VLAN bietet diverse Vorteile im Gegensatz zum herkömmlichen Ansatz:
 
 - Die Zuordnung von Endgeräten zu Netzwerksegmenten erfolgt unabhängig vom Standort der Basisstation.
-- Im gegensatz zur physischen Zuordnung zu verschiedenen Subnetzen kann der Wechsel eines Clients von einem VLAN in ein anderes am Kopplungselement (Multilayerswitch, Router) geschehen, ohne dass eine physische Verbindung geändert werden muss.
+- Im Gegensatz zur physischen Zuordnung zu verschiedenen Subnetzen kann der Wechsel eines Clients von einem VLAN in ein anderes am Kopplungselement (Multilayerswitch, Router) geschehen, ohne dass eine physische Verbindung geändert werden muss.
 - Es Entstehen Performance-Vorteile. So kann zum Beispiel ein bestimmter Datenverkehr wie VoIP in einem VLAN erfolgen, das bei der Übertragung priorisiert wird.
 - VLANs können Netze gegen Ausspionieren und Abhören besser absichern als Switch-basierte Netze. 
 
 
-Die folgende Grafik veranschualicht den Aufbau eines VLAN:
+Die folgende Grafik veranschaulicht den Aufbau eines VLAN:
 
 ![VLAN](./doc/assets/vlan.gif)
 
@@ -73,8 +73,8 @@ Manual: [Dokumentation für den HP Switch](./doc/Manual_HP_Switch.pdf)
 - HP Switch mittels Factory Reset auf Werkeinstellungen zurückgesetzt
 - Verwendung eines RJ45 to Serial Kabel um eine Verbindung herzustellen.
 - Spezieller Treiber für die Verwendung dieses Kabels hat nicht funktioniert. Es kann keine Verbindung mit PuTTY aufgebaut werden.
-- Mit Unterstützung eines Mitschülers werden Treiberkonflikte mit den von Windows vorinstallierten Treibern festgestellt. Es kann kein Treiber installiert werden, da das Betriebssystem (Windows) ein überschreiben des vorinstallierten Treibers nicht lässt.
-- Zugriff auf serielle Konsole funktioniert nicht, da PuTTY nicht reagiert. Beim Klick auf den Button "Open" passiert nichts
+- Mit Unterstützung eines Mitschülers werden Treiberkonflikte mit den von Windows vorinstallierten Treibern festgestellt. Es kann kein Treiber installiert werden, da das Betriebssystem (Windows) ein Überschreiben des vorinstallierten Treibers nicht lässt.
+- Zugriff auf serielle Konsole funktioniert nicht, da PuTTY nicht reagiert. Beim Klick auf den Button "Open" passiert nichts.
 
 ![Putty](./doc/assets/putty.png)
 
