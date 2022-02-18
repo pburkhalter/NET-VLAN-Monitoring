@@ -18,9 +18,9 @@ Vorab informierten wir uns über die Funktionsweise eines VLAN, um die Aufgabe i
 - Ein VLAN kann sich über mehrere Switches hinweg ausdehnen. 
 - Ein VLAN trennt physische Netze in Teilnetze auf, indem es dafür sorgt, dass VLAN-fähige Switches Frames (Datenpakete) nicht in ein anderes VLAN weiterleiten, obwohl die Teilnetze an gemeinsamen Switches angeschlossen sein können.
 
-Die Zuordnung der Teilnetze zu einem VLAN kann statisch über Portzuordnung an den Switches erfolgen, über spezielle Markierungen an den Paketen (Tags) realisiert sein oder dynamisch erfolgen (zum Beispiel durch MAC-Adressen, IP-Adressen bis hin zu TCP- und UDP-Ports und höheren Protokollen). Ebenfalls ist eine Zuordnung eines Ports zu einem VLAN nach Authentifizierung des Anwenders z. B. mittels 802.1X möglich.
+Die Zuordnung der Teilnetze zu einem VLAN kann statisch über Portzuordnung an den Switches erfolgen, über spezielle Markierungen an den Paketen (Tags) realisiert sein oder dynamisch geschehen (zum Beispiel durch MAC-Adressen, IP-Adressen bis hin zu TCP- und UDP-Ports und höheren Protokollen). Ebenfalls ist eine Zuordnung eines Ports zu einem VLAN nach Authentifizierung des Anwenders z. B. mittels 802.1X möglich.
 
-Jedes VLAN bildet, wie ein normales, physisch separiertes Netzwerksegment, eine eigene Broadcast-Domäne. Um den Verkehr zwischen den VLANs transparent zu vermitteln, benötigt man einen Router. Moderne Switches stellen diese Funktion intern zur Verfügung; man spricht dann von einem Layer-3-Switch.
+Jedes VLAN bildet, wie ein normales, physisch separiertes Netzwerksegment, eine eigene Broadcast-Domäne. Um den Verkehr zwischen den VLANs transparent zu vermitteln, wird ein Router benötigt. Moderne Switches stellen diese Funktion intern zur Verfügung; man spricht dann von einem Layer-3-Switch.
 
 
 Ein VLAN bietet diverse Vorteile im Gegensatz zum herkömmlichen Ansatz:
