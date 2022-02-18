@@ -33,7 +33,7 @@ Ein VLAN bietet diverse Vorteile im Gegensatz zum herkömmlichen Ansatz:
 
 Die folgende Grafik veranschualicht den Aufbau eines VLAN:
 
-![VLAN](.github/assets/vlan.gif)
+![VLAN](./doc/assets/vlan.gif)
 
 Abb. 1: Funktionsweise eines VLAN
 
@@ -55,7 +55,7 @@ Auf der schematischen Darstellung von Andreas ist ersichtlich, dass drei VLANs b
 Da wir verschiedene Ansätze geprüft haben, werden wir die einzelnen Herangehensweisen direkt beschreiben und jeweils auf die Installation, Konfiguration und das Testing jedes Ansatzes eingehen.
 
 ### 1. Versuch: Netgear Switch GS728TP
-Manual: [Dokumentation für den Netgear Switch](doc/Manual_Netgear_Switch.pdf)
+Manual: [Dokumentation für den Netgear Switch](./doc/Manual_Netgear_Switch.pdf)
 
 - Netgear Switch mittels Factory Reset auf Werkeinstellungen zurückgesetzt
 - Versucht mittels NDST Tool via Layer2 Pakete auf Switch zuzugreifen. Nicht erfolgreich, es wurden keine Geräte gefunden.
@@ -63,12 +63,12 @@ Manual: [Dokumentation für den Netgear Switch](doc/Manual_Netgear_Switch.pdf)
 - Mit Wireshark geprüft, ob der Switch reagiert. Nicht erfolgreich, der Switch sendet auf mehreren Ports keine Antwort.
 - Feststellung, dass der Netgear-Switch nicht funktioniert. In Absprache mit Andreas wechseln wir auf den HP Switch ProCurve 2510G-58.
 
-![Wirehsark](.github/assets/wireshark.png)
+![Wirehsark](./doc/assets/wireshark.png)
 
 Abb. 3: Auszug aus Wireshark, Switch sendet keine Antwort
 
 ### 2. Versuch: HP Switch ProCurve 2510G-58
-Manual: [Dokumentation für den HP Switch](doc/Manual_HP_Switch.pdf)
+Manual: [Dokumentation für den HP Switch](./doc/Manual_HP_Switch.pdf)
 
 - HP Switch mittels Factory Reset auf Werkeinstellungen zurückgesetzt
 - Verwendung eines RJ45 to Serial Kabel um eine Verbindung herzustellen.
@@ -76,13 +76,13 @@ Manual: [Dokumentation für den HP Switch](doc/Manual_HP_Switch.pdf)
 - Mit Unterstützung eines Mitschülers werden Treiberkonflikte mit von Windows vorinstallierten Treibern festgestellt. Es kann kein Treiber installiert werden, da das Betriebssystem (Windows) den aktuellen Treiber nicht überschreiben lässt.
 - Zugriff auf serielle Konsole funktioniert nicht, da PuTTY nicht reagiert. Beim Klick auf den Button "Open" passiert nichts
 
-![Putty](.github/assets/putty.png)
+![Putty](./doc/assets/putty.png)
 
 Abb. 4: Ausschnitt aus dem Konfigurationstool PuTTY
 
 
 ### 3. Versuch: Cisco Switch
-Manual: [Dokumentation für den Cisco Switch](doc/Manual_Cisco_Switch.pdf)
+Manual: [Dokumentation für den Cisco Switch](./doc/Manual_Cisco_Switch.pdf)
 
 - Kommunikation mit dem Switch erfolgreich.
 - Grundlegende Konfiguration konnte abgeschlossen werden
@@ -98,4 +98,4 @@ Wäre uns mehr Zeit zur Verfügung gestanden, hätten wir uns vertiefter mit der
 Als Nächstes hätten wir die Konfiguration des Cisco-Switches beendet. Leider hätten wir dafür viel mehr Zeit benötigt, da wir uns überhaupt nicht mit dem Cisco iOS auskannten und so die Einarbeitungszeit sehr hoch gewesen wäre.
 
 ## Glossar
-Worterklärungen finden sich im [Glossar](doc/glossar.md)
+Worterklärungen finden sich im [Glossar](./doc/glossar.md)
